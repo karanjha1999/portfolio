@@ -10,35 +10,19 @@
 
     <ul>
       <li><a id="loader" target="_blank">Loader</a></li>
-      <li><a id="gallery" target="_blank">Gallery</a></li>
-      <li><a id="form" target="_blank">form</a></li>
-      <li><a id="iframevedio" target="_blank">iframevedio</a></li>
-      <li><a id="mapping" target="_blank">mapping</a></li>
-      <li><a id="orderlist" target="_blank">orderlist</a></li>
-      <li><a id="basic" target="_blank">basic</a></li>
-      <li><a id="bootstrap1" target="_blank">bootstrap</a></li>
-      <li><a id="navbar" target="_blank">Offcanvas Navbar</a></li>
-      
     </ul>
 
     <script>
       var isDevelopment = false; // Change this to false for production
-      var baseURL = isDevelopment ? "http://localhost:5501/PORTFOLIO" : "/PORTFOLIO";
+      var baseURL = isDevelopment
+        ? "http://localhost:5501/PORTFOLIO"
+        : "/PORTFOLIO";
       // Now you can use baseURL to construct your links
 
       var loaderPageURL = baseURL + "/loader/index.html";
-      var galleryPageURL = baseURL + "/gallery/gallery.html";
-      var formPageURL = baseURL + "/form/form.html";
-      var iframevedioPageURL = baseURL + "/iframevedio/index.html";
-      var mappingPageURL = baseURL + "/mapping/map.html";
-      var orderlistPageURL = baseURL + "/orderlist/orderlist.html";
-      var basicPageURL = baseURL + "/basic.html";
-      var bootstra1pPageURL = baseURL + "/bootstrap-5.3.2-dist/index.html";
-      var navbarpPageURL = baseURL + "/offcanvas navbar/index.html";
-
 
       // Get all <li> elements
-      var listItems = document.querySelectorAll("ul li"); 
+      var listItems = document.querySelectorAll("ul li");
       // Iterate through each <li> element
       listItems.forEach(function (li) {
         // Find the <a> element inside the current <li>
@@ -49,47 +33,7 @@
             document
               .querySelector("#loader")
               .setAttribute("href", loaderPageURL);
-              break;
-              case "gallery":
-            document
-              .querySelector("#gallery")
-              .setAttribute("href", galleryPageURL);
-              break;
-              case "form":
-            document
-              .querySelector("#form")
-              .setAttribute("href", formPageURL);
-              break;
-              case "iframevedio":
-            document
-              .querySelector("#iframevedio")
-              .setAttribute("href", iframevedioPageURL);
-              break;
-              case "mapping":
-            document
-              .querySelector("#mapping")
-              .setAttribute("href", mappingPageURL);
-              break;
-              case "orderlist":
-            document
-              .querySelector("#orderlist")
-              .setAttribute("href", orderlistPageURL);
-              break;
-              case "basic":
-            document
-              .querySelector("#basic")
-              .setAttribute("href", basicPageURL);
-              break;
-              case "bootstrap1":
-            document
-              .querySelector("#bootstrap1")
-              .setAttribute("href",bootstra1pPageURL);
-              break;
-              case "navbar":
-            document
-              .querySelector("#navbar")
-              .setAttribute("href",navbarpPageURL);
-              break;
+            break;
         }
       });
     </script>
