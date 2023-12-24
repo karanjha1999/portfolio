@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projectindex</title>
+    <link
+      rel="stylesheet"
+      href="assests/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <script
+      href="assests/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"
+    ></script>
   </head>
   <body>
     <div style="font-weight: bold; font-size: 50px">All Projects</div>
 
     <ul>
       <li><a id="loader" target="_blank">Loader</a></li>
+      <li><a id="navbar" target="_blank">Offcanvas Navbar</a></li>
     </ul>
 
     <script>
       var isDevelopment = false; // Change this to false for production
       var baseURL = isDevelopment
-        ? "http://localhost:5501/portfolio"
-        : "/portfolio";
+        ? "http://localhost:5501/PORTFOLIO"
+        : "/PORTFOLIO";
       // Now you can use baseURL to construct your links
 
       var loaderPageURL = baseURL + "/loader/index.html";
+      var navbarPageURL = baseURL + "/navbar/index.html";
 
       // Get all <li> elements
       var listItems = document.querySelectorAll("ul li");
@@ -33,6 +42,11 @@
             document
               .querySelector("#loader")
               .setAttribute("href", loaderPageURL);
+            break;
+          case "navbar":
+            document
+              .querySelector("#navbar")
+              .setAttribute("href", navbarPageURL);
             break;
         }
       });
