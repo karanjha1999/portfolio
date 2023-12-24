@@ -18,6 +18,7 @@
     <ul>
       <li><a id="loader" target="_blank">Loader</a></li>
       <li><a id="navbar" target="_blank">Offcanvas Navbar</a></li>
+      <li><a id="gallery" target="_blank">Gallery</a></li>
     </ul>
 
     <script>
@@ -29,6 +30,7 @@
 
       var loaderPageURL = baseURL + "/loader/index.html";
       var navbarPageURL = baseURL + "/navbar/index.html";
+      var galleryPageURL = baseURL + "/gallery/index.html";
 
       // Get all <li> elements
       var listItems = document.querySelectorAll("ul li");
@@ -47,6 +49,11 @@
             document
               .querySelector("#navbar")
               .setAttribute("href", navbarPageURL);
+            break;
+            case "gallery":
+            document
+              .querySelector("#gallery")
+              .setAttribute("href", galleryPageURL);
             break;
         }
       });
