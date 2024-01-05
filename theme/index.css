@@ -1,0 +1,16 @@
+:root
+{
+    --primarycolor: blue ;
+    --secondarycolor: black;
+    --bgcolor: red;
+
+}
+h1{
+    color: var(--primarycolor);
+}
+section{
+    color: var(--secondarycolor);
+}
+body{
+    background-color: var(--bgcolor);
+}

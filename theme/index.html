@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme  change</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function changecolor(primarycolor,secondarycolor,bgcolor){
+            document.documentElement.style.setProperty('--primarycolor',primarycolor)
+            document.documentElement.style.setProperty('--secondarycolor',secondarycolor)
+            document.documentElement.style.setProperty('--bgcolor',bgcolor)
+        }
+    </script>
+</head>
+<body>
+    <h1> this is heading.</h1>
+    <section> this is section</section>
+    
+    
+    <button onclick="changecolor('coral','black','blue')">change color</button>
+    <button onclick="changecolor('pink','red','orange')">change color</button>
+</body>
+</html>
