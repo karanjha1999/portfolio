@@ -17,8 +17,13 @@
           background-color: var(--bgcolor);
         }
 
-
+h1{
+  color: var(--primarycolor);
+}
     
+section{
+  color: var(--secondarycolor);
+}
     </style>
     <script>
       function changecolor(primarycolor,secondarycolor,bgcolor)
@@ -54,8 +59,8 @@
                     Dropdown
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#"><button onclick="changecolor('coral','black','red')">change color</button></a></li>
-                    <li><a class="dropdown-item" href="#"><button onclick="changecolor('green','black','blue')">change to another color</button></a></li>
+                    <li><a class="dropdown-item" ><button onclick="changecolor('coral','black','red')">change color</button></a></li>
+                    <li><a class="dropdown-item"><button onclick="changecolor('green','black','blue')">change to another color</button></a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -99,7 +104,8 @@
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button>
-
+<h1>this is a linkedIn Profile work</h1>
+<section>this is a card model presented infront of u</section>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
