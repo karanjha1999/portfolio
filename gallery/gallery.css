@@ -110,7 +110,7 @@ img {
   position: absolute;
   left: 18px;
   top: 100%;
-  background-color: red;
+  background-color: pink;
   display: none;
 }
 
@@ -132,4 +132,22 @@ img {
 
 .dropdown-option {
   /* position: absolute; */
+}
+
+:root{
+  --primarycolor: blue;
+  --secondarycolor: red;
+  --bgcolor: rgb(255, 80, 229);
+}
+
+.container{
+ color: var(--primarycolor)
+}
+
+li,ul,a,div{
+  color: var(--secondarycolor);
+
+}
+body{
+  color: var(--bgcolor);
 }

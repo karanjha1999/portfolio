@@ -6,6 +6,28 @@
     <title>navbar</title>
     <link href="../assests/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="../assests/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      :root{
+        --primarycolor: blue;
+        --secondarycolor: black;
+        --bgcolor: coral;
+
+      }
+        body{
+          background-color: var(--bgcolor);
+        }
+
+
+    
+    </style>
+    <script>
+      function changecolor(primarycolor,secondarycolor,bgcolor)
+      {
+      document.documentElement.style.setProperty(' --primarycolor','primarycolor')
+      document.documentElement.style.setProperty(' --secondarycolor','secondarycolor')
+      document.documentElement.style.setProperty('--bgcolor','bgcolor')
+    }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -32,8 +54,8 @@
                     Dropdown
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#"><button onclick="changecolor('coral','black','red')">change color</button></a></li>
+                    <li><a class="dropdown-item" href="#"><button onclick="changecolor('green','black','blue')">change to another color</button></a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
